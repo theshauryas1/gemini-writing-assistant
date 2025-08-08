@@ -1,0 +1,7 @@
+{
+  "name": "Gemini Smart Assistant",
+  "description": "An intelligent AI assistant powered by the Gemini API that provides context-aware responses using your location, time, and conversation history.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gemini Smart Assistant</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              'ai-blue': {
+                light: '#4285F4',
+                dark: '#8ab4f8',
+              },
+              'user-gray': {
+                light: '#f1f3f4',
+                dark: '#282828',
+              },
+              'background': {
+                light: '#ffffff',
+                dark: '#000000',
+              },
+              'surface': {
+                light: '#f8f9fa',
+                dark: '#111111',
+              },
+              'text': {
+                primary: {
+                  light: '#202124',
+                  dark: '#ffffff',
+                },
+                secondary: {
+                  light: '#5f6368',
+                  dark: '#b0b0b0',
+                }
+              },
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
+    "react/": "https://esm.sh/react@^19.1.1/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.13.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-background-light dark:bg-background-dark">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
